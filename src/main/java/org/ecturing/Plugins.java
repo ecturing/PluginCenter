@@ -1,5 +1,8 @@
 package org.ecturing;
 
-public interface Plugins {
-    String service();
+import java.util.concurrent.Callable;
+
+public interface Plugins extends Callable {
+    @Override
+    Object call() throws Exception;
 }
