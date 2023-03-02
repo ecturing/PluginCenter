@@ -2,7 +2,7 @@ package org.ecturing;
 
 import java.util.concurrent.Callable;
 
-public interface Plugins<T> extends Callable<T> {
+public interface Plugins<String> extends Callable<String> {
     @Override
-    T call() throws Exception;
+    String call() throws Exception;
 }
